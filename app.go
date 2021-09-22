@@ -1,4 +1,4 @@
-package ghoST
+package Notae
 
 import (
 	"bytes"
@@ -52,7 +52,7 @@ func CreateBox(AppTitle string, Address string) Box {
 		Address = ":8080"
 	}
 	if AppTitle == "" {
-		AppTitle = "Default ghoST Application"
+		AppTitle = "Default Notae Application"
 	}
 
 	CreatedBox := Box{
@@ -65,7 +65,7 @@ func CreateBox(AppTitle string, Address string) Box {
 }
 
 func (Box *Box) Run() {
-	fmt.Printf("Your ghoST Application: <%s> is started to working on HTTP, <%s>\n", Box.AppTitle, Box.Address)
+	fmt.Printf("Your Notae Application: <%s> is started to working on HTTP, <%s>\n", Box.AppTitle, Box.Address)
 	err := http.ListenAndServe(Box.Address, &Box.FunctionalRouter)
 	if err != nil {
 		log.Fatal(fmt.Sprintf("Server Runtime Internal Error: <%s>\n", err))

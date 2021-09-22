@@ -1,6 +1,5 @@
-# ghoST
-ghoST is..
-* JSON·map{} Based REST API·<del>Web Server</del> implementation in Golang
+# notae
+* JSON·map{} Based REST API·<del>Web Server</del> implementation in Golang from Cheonan, South Korea.
 * Simpler than others, but with both productivity and complexity for large REST API·Web Servers.
 * Using Box-Component Structure
 * Helping to code REST API simply
@@ -13,18 +12,18 @@ ghoST is..
 package main
 
 import (
-    "github.com/timtermtube/ghoST"
+    "github.com/timtermtube/notae"
 )
 
 func main() {
-    Comp := ghoST.CreateComponent(ghoST.ComponentOptions{
+    Comp := Notae.CreateComponent(Notae.ComponentOptions{
 	Route:  "/",
 	Title:  "A Component",
 	Method: func(c *Component) {
             c.ModifyPlate("A", 1)
         }
     })
-    Box := ghoST.CreateBox("", "")
+    Box := Notae.CreateBox("", "")
     Box.LinkComponent(Comp, 0)
     
     Box.LetGo()
