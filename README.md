@@ -1,5 +1,5 @@
-# notae
-* JSON·map{} Based REST API·<del>Web Server</del> implementation in Golang from Cheonan, South Korea.
+# notae is...
+* JSON·map{} Based REST API·<del>Web Server</del> implementation in Golang, from Cheonan, South Korea.
 * Simpler than others, but with both productivity and complexity for large REST API·Web Servers.
 * Using Box-Component Structure
 * Helping to code REST API simply
