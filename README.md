@@ -3,8 +3,7 @@
 * Simpler than others, but with both productivity and complexity for large REST API·Web Servers.
 * Using Box-Component Structure
 * Helping to code REST API simply
-* <a href="https://github.com/timtermtube/goST/wiki">also Documentations!</a>
-* <a href="https://pkg.go.dev/github.com/timtermtube/goST@main#section-documentation">API References</a>
+* <a href="https://pkg.go.dev/github.com/timtermtube/notae#section-documentation">Documentation is here.</a>
 
 # Start in the Simplest way
 ```golang
