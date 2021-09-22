@@ -82,9 +82,9 @@ func (Box *Box) LinkComponent(Component Component, id int) {
 		}
 	}
 	Processor := func(res http.ResponseWriter, req *http.Request) {
-		dialogue := fmt.Sprintf("Method: <%s> to Component of Box: %s: <%v:%v> from <%v>\n",
+		dialogue := fmt.Sprintf("Method: <%s> to Component of Box: %s: <%v:%v> from <%v> ",
 			req.Method, Box.CallSign, Component.Title, Component.Id, strings.Split(req.RemoteAddr, ":")[0])
-		go fmt.Println(dialogue)
+		fmt.Println(dialogue)
 		TempChan := make(chan string)
 		go func(channel chan string) {
 			TempByte := new(bytes.Buffer)
