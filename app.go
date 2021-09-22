@@ -10,8 +10,6 @@ import (
 	"strings"
 )
 
-// For Test
-
 type CompMethod func(c *Component)
 
 type Request struct {
