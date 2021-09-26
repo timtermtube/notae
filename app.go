@@ -90,7 +90,7 @@ func (Box *Box) LinkComponent(Component Component, id int) {
 			TempByte := new(bytes.Buffer)
 			TempByte.ReadFrom(req.Body)
 			Component.HttpCode = 200
-			Component.ResponseHeader = map[string]string{"Content-Type": "application/json; charset=utf-8"}
+			Component.ResponseHeader = map[string]string{"Content-Type": "application/json; charset=utf-8", "Access-Control-Allow-Methods": "*"}
 			Component.ResponsePlate = make(map[string]interface{})
 			Component.Request = Request{
 				Type:   req.Method,
